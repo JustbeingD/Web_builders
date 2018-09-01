@@ -6,34 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web Builders</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Radley" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="cssreset.css">
     <link rel="stylesheet" href="wb.css">
 </head>
 <body>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark cf">
         <div class="container">
-            <a class="navbar-brand" href="#"><p>Web</p> 
-                <p>Builders</p></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#home"><p>Web</p> 
+                <span class="indent"><p>Builders</p></span></a>
+            <button class="navbar-toggler justify-content-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav cf">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
+                        <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -42,139 +45,120 @@
     <!--Navigation End-->
     <!--Home-->
     <section id="home">
+        <div class="home-cover">
         <div class="container">
-            <h1>Web Builders</h1>
-            <h3>Connecting the world one website at a time</h3>
-            <button>Come build with us</button>
+            <div class="home-intro">
+                <h1>Web Builders</h1>
+                <h2>Connecting the world one website at a time</h2>
+                <a href="" class="home-btn">Come build with us</a>
+            </div>
+        </div>
         </div>
     </section>
     <!--Home End-->
     <!--Services-->
     <section id="services">
         <div class="container">
-            <h2>Services</h2>
-            <p>Providing world-class</p>
-        <!--3 columns showing tyhe services, icons and title and text-->
+            <div class="services-header">
+                <h2>Services</h2>
+                <p>Providing world-class</p>
+            <!--3 columns showing tyhe services, icons and title and text-->
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fas fa-desktop fa-stack-1x fa-inverse"></i>
+                      </span>
+                      <div class="services-content">  
+                    <h4>Building awesome content</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, recusandae veritatis! Nesciunt reprehenderit quas ipsam accusantium repudiandae aliquid iure quo ad, enim dolores hic, laboriosam consequuntur modi cumque, expedita vitae.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fas fa-globe fa-stack-1x fa-inverse"></i>
+                      </span>
+                    <div class="services-content">  
+                    <h4>To share around the world</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat aperiam corporis quisquam quae exercitationem dolorem ipsam pariatur deserunt veniam excepturi sint, tenetur natus esse quia consequatur sed aut culpa ut.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fas fa-smile fa-stack-1x fa-inverse"></i>
+                      </span>
+                      <div class="services-content">  
+                    <h4>For all to enjoy</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptate rem excepturi illum et ex officia. Aut aperiam ullam blanditiis voluptas assumenda, quod qui rerum maiores dolor ad eius numquam.</p>
+                    </div>
+                </div>
+            </div>        
         </div>
     </section>
     <!--Services End-->
     <!--Portfolio-->
-    <section id="portfolio" class="">
+    <section id="portfolio">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">A picture is worth a thousand words</h3>
-                </div>
+            <div class="portfolio-header">
+                <h2>Portfolio</h2>
+                <p>A picture is worth a thousand words</p>
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="picture">
-                            <img src="" class="image" width="100%" height="240px">
-                        </div>
-                        <img src="" class="img-responsive" alt="">
-                    </a>
+                    <div class="picture">
+                        <figure><img src="https://kenh14cdn.com/2016/d9-1455701255894.jpg" class="image" width="100%" height="270px"></figure>
+                    </div>
                     <div class="portfolio-caption">
-                        <h4></h4>
-                        <p class="text-muted"></p>
+                        <h4>Belle's Beauties</h4>
+                        <p>Simply Amazing</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                            <div class="picture">
-                            <img src="" class="image" width="100%" height="240px">
-                        </div>
-                    </a>
+                    <div class="picture">
+                        <figure><img src="https://kenh14cdn.com/2016/d12-1455701255985.jpg" class="image" width="100%" height="270px"></figure>
+                    </div>
                     <div class="portfolio-caption">
-                        <h4>Bryant's Bike Shop</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>pocahontas' professionals</h4>
+                        <p>Awesomely Awesome</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="picture">
-                            <img src="" class="image" width="100%" height="240px">
-                        <div class="visit">
-                            <a href="" target="_blank"><p class="text">Visit Full Page</p></a>
-                        </div> 
-                        </div>
-                    </a>
+                    <div class="picture">
+                        <figure><img src="https://kenh14cdn.com/2016/d10-1455701255922.jpg" class="image" width="100%" height="270px"></figure>
+                    </div>
                     <div class="portfolio-caption">
-                        <h4>Redskins Season Tickets</h4>
-                        <p class="text-muted">Landing Page</p>
+                        <h4>Jazmin's Jewels</h4>
+                        <p>Always Blinging</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="picture">
-                            <img src="" class="image" width="100%" height="240px">
-                        <div class="visit">
-                            <a href=""><p class="text">Visit Full Page</p></a>
-                        </div> 
-                        </div>
-                    </a>
+                    <div class="picture">
+                        <figure><img src="https://kenh14cdn.com/2016/d11-1455701255954.jpg" class="image" width="100%" height="270px"></figure>
+                    </div>
                     <div class="portfolio-caption">
-                        <h4>Fast Plate</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>Mulan's Marketing</h4>
+                        <p>Customer Focused</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="picture">
-                            <img src="" class="image" width="100%" height="240px">
-                        <div class="visit">
-                            <a href="" target="_blank"><p class="text">Visit Full Page</p></a>
-                        </div> 
-                        </div>
-                    </a>
+                    <div class="picture">
+                        <figure><img src="https://kenh14cdn.com/2016/d3-1455701255735.jpg" class="image" width="100%" height="270px"></figure>
+                    </div>
                     <div class="portfolio-caption">
-                        <h4>Markitors</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>Tiana's Teases</h4>
+                        <p>Jokes on you</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <div class="picture">
-                            <img src="" class="image" width="100%" height="240px">
-                        <div class="visit">
-                            <a href=""" target="_blank"><p class="text">Visit Full Page</p></a>
-                        </div> 
+                    <div class="picture">
+                        <figure><img src="https://kenh14cdn.com/2016/d5-1455701256052.jpg" class="image" width="100%" height="270px"></figure>
                     </div>
-                    </a>
                     <div class="portfolio-caption">
-                        <h4>Calhoun</h4>
-                        <p class="text-muted">Website Design</p>
+                        <h4>Snow White's sheets</h4>
+                        <p>seven dwarves</p>
                     </div>
                 </div>
             </div>
@@ -184,20 +168,60 @@
     <!--About-->
     <section id="about">
         <div class="container">
-            <p>Learn more</p>
-            <h2>About</h2>
-            <p>Us</p>
-            <p>Web Builders was built for the people. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut accusantium voluptatibus, laborum aliquam, quae magni sunt libero ea neque quisquam illo sapiente voluptate, tempore labore quasi blanditiis cum a. Necessitatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem qui dolor repudiandae reprehenderit facilis, dolorum, fugiat corporis quas recusandae, veritatis ea! Commodi soluta asperiores eum rerum voluptate. Nisi, enim quis.</p>
+            <div class="about-header">
+                <p>Learn more</p>
+                <h2>About</h2>
+                <p>Us</p>
+            </div>
+            <div class="about-content">
+                <p>Web Builders was built for the people. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut accusantium voluptatibus, laborum aliquam, quae magni sunt libero ea neque quisquam illo sapiente voluptate, tempore labore quasi blanditiis cum a. Necessitatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem qui dolor repudiandae reprehenderit facilis, dolorum, fugiat corporis quas recusandae, veritatis ea! Commodi soluta asperiores eum rerum voluptate. Nisi, enim quis.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatum et recusandae iure similique sequi libero temporibus nostrum? Placeat maxime architecto praesentium saepe? Modi dolor, ex totam rerum recusandae eveniet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, officia ea ipsa minima modi molestiae eligendi pariatur rerum iusto qui consequatur harum quo numquam? Est iste nihil dolor fugiat veniam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ducimus suscipit temporibus odit corporis alias doloribus, quam mollitia hic vero sequi, tempore sapiente! Libero consequatur saepe molestiae quos, corporis iusto!</p>
+            </div>
         </div>
     </section>
     <!--About End-->
+    <svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0 0 C 50 100 80 100 100 0 Z" />
+    </svg>
     <!--Team-->
     <section id="team">
         <div class="container">
-            <p>A</p>
-            <h2>Team</h2>
-            <p>United</p>
+            <div class="team-header">
+                <p>A</p>
+                <h2>Team</h2>
+                <p>United</p>
+                <p class="sub-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
             <!--3 team members img border circle name and title twitter fb linkedin-->
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                        <div class="team-picture">
+                            <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7b78688b9226cf873a26635137b52bbb&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                        <div class="services-content">  
+                    <h4>John</h4>
+                    <p>The Thinker</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fas fa-globe fa-stack-1x fa-inverse"></i>
+                        </span>
+                    <div class="services-content">  
+                    <h4>To share around the world</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat aperiam corporis quisquam quae exercitationem dolorem ipsam pariatur deserunt veniam excepturi sint, tenetur natus esse quia consequatur sed aut culpa ut.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fas fa-smile fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <div class="services-content">  
+                    <h4>For all to enjoy</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptate rem excepturi illum et ex officia. Aut aperiam ullam blanditiis voluptas assumenda, quod qui rerum maiores dolor ad eius numquam.</p>
+                    </div>
+                </div>
+            </div>        
         </div>
     </section>
     <!--Team End-->
@@ -231,7 +255,7 @@
         </div>
     </section>
     <!--Contact End-->
-    
+
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

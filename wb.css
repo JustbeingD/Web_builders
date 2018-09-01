@@ -1,11 +1,375 @@
 /* Variables */
 :root{
    --link-hover-color: ;
-   --main-background-color: ;
+   --nav-hover-color: #FFDF00;
+   --main-background-color: #c9c9c9;
+   --secondary-background-color: #eeeeee;
+   --section-text-color: #3c3c3c;
+   --sub-text-color: #777777;
 
 }
 
 /* Global */
 body {
+    background-color: var(--nav-hover-color)
+}
+.navbar-dark .navbar-nav .nav-link:focus, 
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: var(--nav-hover-color);
+}
+/* Navigation */
+.navbar {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: rgba(17, 29, 56, 0.95);
+}
+
+.navbar-brand p{
+    color: var(--nav-hover-color);
+}
+.navbar-brand .indent {
+    text-indent: 15px;
+}
+
+/* Home */
+
+#home {
+    background-image: url("https://images.unsplash.com/photo-1492515114975-b062d1a270ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=11f3f0941e8ca95e3e1ae3054da27d2e&auto=format&fit=crop&w=2100&q=80");
+    width:100%;
+    min-height: 85vh;
+    background-attachment: fixed;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+.home-cover{
+    background: rgba(0, 0, 19, 0.39);
+    width:100%;
+    min-height: 85vh;
+    background-attachment: fixed;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+   
+.home-intro {
+    padding: 325px 0 200px 0;
+    text-align: center;      
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: white
+   }
+
+.home-intro h1{
+    font-family: 'Radley', serif;
+    color: var(--nav-hover-color);
+    font-size: 85px;
+    padding-bottom: 5px;
+	text-shadow:	0px 4px 3px rgba(0,0,0,0.4),
+					0px 8px 13px rgba(0,0,0,0.1),
+                    0px 18px 23px rgba(0,0,0,0.1);
+    position: relative;
+    animation-name: web;
+    animation-duration: 5s;
+}
+@keyframes web {
+    0%      {top: -1000px;}
+    100%    {top: 0px;}
+}
+.home-intro h2 {
+    font-family: 'Philosopher', sans-serif;
+    font-size: 35px; 
+    font-style: italic;
+    padding-bottom: 55px;
+    position: relative;
+    animation-name: connect;
+    animation-delay: 3;
+    animation-duration: 7s;
+    transition: ease-in;
+
     
+}
+@keyframes connect {
+    0%      {left: -20000px;}
+    100%    {left: 0px;}
+}
+.home-btn {
+    font-family: 'Radley', serif;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid white;
+    text-decoration: none;
+    color: #fefdfd;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition: .2s;
+}
+@keyframes btn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.home-btn:hover{
+	transform: translateY(-2px);
+	background: var(--nav-hover-color);
+    color: black;
+    text-decoration: none;
+}
+
+/* Services */
+
+#services {
+    background-color: #fefdfd;
+    padding: 100px 0;
+}
+
+.services-header {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-weight: 700;
+    padding: 0 0 100px 0;
+    text-align: center;      
+    line-height: 1.2;
+}
+.services-header h2 {
+    font-size: 40px;
+    color: var(--section-text-color);
+    text-transform: uppercase;
+    text-shadow:	0px 4px 3px rgba(0,0,0,0.4),
+					0px 8px 13px rgba(0,0,0,0.1),
+                    0px 18px 23px rgba(0,0,0,0.1);
+}
+.services-header p {
+    font-size: 18px;
+    color: var(--sub-text-color);
+    font-style: italic;
+    text-transform: capitalize;
+}
+.fa-square{
+    color: var(--nav-hover-color);
+}
+.col-md-4 {
+    text-align: center;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.services-content h4{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 0 10px 0;
+    color: var(--section-text-color);
+    text-transform: capitalize;
+}
+.services-content p {
+    font-size: 15px;
+    font-style: italic;
+    color: var(--sub-text-color);
+    line-height: 1.5;
+}
+
+/* Portfolio */
+
+#portfolio {
+    background-color: var(--secondary-background-color);
+    padding: 100px 0;
+}
+
+.portfolio-header {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-weight: 700;
+    padding: 0 0 100px 0;
+    text-align: center;      
+    line-height: 1.2;
+}
+.portfolio-header h2 {
+    font-size: 40px;
+    color: var(--section-text-color);
+    text-transform: uppercase;
+    text-shadow:	0px 4px 3px rgba(0,0,0,0.4),
+					0px 8px 13px rgba(0,0,0,0.1),
+                    0px 18px 23px rgba(0,0,0,0.1);
+}
+.portfolio-header p {
+    font-size: 18px;
+    color: var(--sub-text-color);
+    font-style: italic;
+    text-transform: capitalize;
+}
+.portfolio-item{
+    margin: 0 0 25px;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+}
+.portfolio-caption h4 {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--section-text-color);
+    text-transform: uppercase;
+}
+.portfolio-caption p {
+    font-size: 15px;
+    margin: 5px 0;
+    color: var(--sub-text-color);
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+/* .picture img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.picture:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+} */
+
+/* .picture figure {
+	position: relative;
+}
+.picture figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.picture figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+} */
+
+.picture figure {
+	background: var(--nav-hover-color);
+}
+.picture figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.picture figure:hover img {
+	opacity: .5;
+}
+
+figure {
+	width: 100%;
+	height: 270px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+/* figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+} */
+
+/* About */
+
+#about {
+    background-color: #fefdfd;
+    padding: 100px 0;
+}
+
+.about-header {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-weight: 700;
+    padding: 0 0 100px 0;
+    text-align: center;      
+    line-height: 1.2;
+}
+.about-header h2 {
+    font-size: 40px;
+    color: var(--section-text-color);
+    text-transform: uppercase;
+    text-shadow:	0px 4px 3px rgba(0,0,0,0.4),
+					0px 8px 13px rgba(0,0,0,0.1),
+                    0px 18px 23px rgba(0,0,0,0.1);
+}
+.about-header p {
+    font-size: 18px;
+    color: var(--sub-text-color);
+    font-style: italic;
+    text-transform: capitalize;
+}
+.about-content p {
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Team */
+#curveUpColor path,
+#curveDownColor path {
+	fill: #fefdfd;
+	stroke: #fefdfd;
+}
+#team {
+    background-color: var(--nav-hover-color);
+    padding: 55px 0 100px;
+}
+
+.team-header {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-weight: 700;
+    padding: 0 0 100px 0;
+    text-align: center;      
+    line-height: 1.2;
+}
+.team-header h2 {
+    font-size: 40px;
+    color: var(--section-text-color);
+    text-transform: uppercase;
+    text-shadow:	0px 4px 3px rgba(0,0,0,0.4),
+					0px 8px 13px rgba(0,0,0,0.1),
+                    0px 18px 23px rgba(0,0,0,0.1);
+}
+.team-header p {
+    font-size: 18px;
+    color: var(--sub-text-color);
+    font-style: italic;
+    text-transform: capitalize;
+}
+.team-header .sub-title{
+    margin: 15px 0 0 0;
+}
+.team-picture img {
+    width: 250px;
+    height: 250px;
+    border: 5px solid white;
+    border-radius: 50%
 }
